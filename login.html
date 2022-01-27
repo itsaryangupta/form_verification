@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="script.js"></script>
+    <style>
+        .btn1 {
+            background-color: red;
+            padding: 10px;
+        }
+
+        .btn3 {
+            background-color: green;
+            padding: 10px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <font color="lime">
+        <table cellpadding=10>
+            <tr>
+                <td colspan=2 align="center" bgcolor="orange">
+                    <h1>Sign up</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">First Name</td>
+                <td><input id="fname" onkeyup="name_validate(this.id)" type="text" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td id="error1" class="error">
+
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Last Name</td>
+                <td><input id="lname" onkeyup="name_validate(this.id)" type="text" placeholder="Enter last name"></td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+
+                <td id="error2" class="error">
+
+                </td>
+            </tr>
+            <tr>
+                <td align="right">&emsp;&emsp;Date of Birth</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select id="country" onchange="country(this.value)">
+                        <option>Country</option>
+                        <option>India</option>
+                        <option>England</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    E-mail
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter your E-mail">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Phone
+                </td>
+                <td>
+                    <select id="country-code">
+                        <option>+91</option>
+                        <option>+44</option>
+                        <option>+61</option>
+                    </select>
+                    <input type="text" onkeyup="verify_phone(this.value)" placeholder="Enter your phone number">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error5" class="error"></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Password
+                </td>
+                <td>
+                    <input type="password" minlength="8" maxlength="50" id="password"
+                        onkeyup="check_password(this.value)">
+                </td>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="error3-1" class="error"></div>
+                
+                    <div id="error3-2" class="error"></div>
+                    
+                    <div id="error3-3" class="error"></div>
+                   
+                    <div id="error3-4" class="error"></div>
+                    
+                    <div id="error3-5" class="error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align=right>
+                    Confirm<br>Password
+                </td>
+                <td>
+                    <input type="password" minlength="8" maxlength="50" id="password"
+                        onkeyup="confirm_password(this.value)">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error4" class="error">
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">&nbsp;I agree to term & conditions
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="orange" colspan="2" align="center">
+                    <button class="btn1" id="btn2">Submit</button><button class="btn3" id="btn4">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </font>
+    <script>
+        
+    </script>
+</body>
+
+</html>
